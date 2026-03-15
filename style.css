@@ -1,0 +1,298 @@
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #ffc250;
+
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+
+    background-color: rgb(155, 15, 173);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: wheat;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu {
+    padding: 20px 5px;
+
+
+}
+
+.items {
+    padding-top: 10px;
+}
+
+.menu li a {
+    display: block;
+}
+
+.logo img {
+    margin-top: 0;
+    padding-left: 10px;
+    height: 50px;
+    width: 90px;
+    align-items: center;
+}
+.homepage {
+ position:relative;
+ height:100vh;
+ width:100%;
+ background:url("https://img.freepik.com/premium-photo/illustration-saraswati-puja-vector-style_1102-8360.jpg?w=1380");
+ background-position: center;
+ background-size: cover;
+
+}
+.homepage .content{
+    height:85%;
+    flex-direction:column;
+    justify-content:center;
+
+}
+.homepage .text{
+    color:rgba(62, 15, 173, 0.74);
+    text-align:center;
+}
+.homepage .text h3{
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.homepage .content {
+    text-align:center;
+}
+.homepage .btn{
+    margin-top:15px;
+    background-color: beige;
+    padding:10px 4px;
+    cursor:pointer;
+
+}
+.homepage .btn:hover{
+    transform:0.3s;
+    background-color: #333;
+    color:#fff
+
+}
+/*services*/
+section{
+    padding-top:80px;
+}
+section .title {
+    text-align: center;
+}
+section h2{
+    font-size: 2rem;
+}
+section .cards {
+    margin-top:50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section .card{
+    width: calc( 100% / 3 -30px);
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    padding: 40px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    margin-bottom: 40px;
+}
+section .card img{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+section .card p{
+    margin-top: 5px;
+}
+/* About */
+.about .company-info{
+    margin-top: 30px;
+}
+.about .row{
+    padding:0 10px;
+}
+.about h3{
+    margin:30px 0 10px;
+}
+.about ul{
+    padding-left: 20px;
+}
+/* Contact */
+.contact .row{
+    justify-content: space-between;
+    margin: 60px 0 90px;
+}
+.contact .row .col{
+    padding:0 10px;
+    width:calc(100% / 2-50px);
+}
+.contact .row .col p{
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+.conact .row .col p i{
+    margin-right: 10px;
+}
+.contact .form input{
+    width:100%;
+    height:45px;
+    margin-bottom:20px;
+    padding:0 15px;
+    border:1px solid #bfbfbf;
+    outline: none;
+}
+.contact .form textarea{
+    width:100%;
+    height:150px;
+    padding:15px;
+    outline:none;
+    resize:none;
+    border:1px solid #bfbfbf;
+}
+.contact .form button{
+    padding:10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #fff ;
+    border:none;
+    margin-top: 10px;
+    background: #333 ;
+    cursor:pointer;  
+    transition: 0.2s;
+}
+.contact .form button:hover{
+    background: #555 ;
+}
+/* Footer */
+.footer{
+    background: #333 ;
+    padding:20px 0;
+    text-align: center;
+    color: #fff ;
+}
+
+
+/*mobile menu*/
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.menu .toggle {
+    cursor: pointer;
+    display: block;
+    order: 1;
+}
+
+.items {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.items.active {
+    display: block;
+}
+
+.bars {
+    background: wheat;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+
+.bars::before,
+.bars::after {
+    background: wheat;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+.homepage .btn{
+    margin-top:30px;
+}
+
+
+/*tablet screen*/
+@media all and (min-width:468) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .toggle {
+        order: 2;
+        cursor: pointer;
+    }
+}
+
+/*desktop screen*/
+@media all and (min-width:768px) {
+
+    .items {
+        display: block;
+        width: auto;
+    }
+
+    .menu .toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .items {
+        order: 1;
+    }
+
+    .menu li {
+        padding: 10px 10px;
+    }
+}

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--responsive layout-->
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><!--for symbols-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script> //activating the toggle using js
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".items").hasClass("active")) {
+                    $(".items").removeClass("active");
+                }
+                else {
+                    $(".items").addClass("active");
+
+                }
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <!--header starts-->
+    <h2>Welcome to Swaram</h2>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img
+                    src="icons8-veena-50.png"
+                    alt="music Logo"></li>
+            <li class="items"><a href='#Home'>Home</a></li>
+            <li class="items"><a href='#Services'>Services</a></li>
+            <li class="items"><a href='#About'>About</a></li>
+            <li class="items"><a href='#contact'>Contact</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+
+    </nav>
+    <!--header ends-->
+    <!--homepage starts-->
+    <section class="homepage" id="Home">
+        <div class="content flex">
+            <div class="text">
+                <h3>Lets Embrace Our Traditonal Music</h3>
+            </div>
+            <button class="btn">Our Services</button>
+        </div>
+        
+    </section>
+
+    <!--service section starts-->
+    <section class="Services" id="Services">
+        <div class="container">
+            <div class="section title">
+                <h2>Our Services</h2>
+                <p>We offer various classes including the following major ones.</p>
+            </div>
+            <ul class="cards flex">
+                <li class="card">
+                    <img src="https://i.pinimg.com/736x/3a/ac/c6/3aacc65ea1fa8166aeea752249c71437.jpg"
+                        alt="Serviceimg">
+                    <h3>Veena Classes</h3>
+                    <p>The Divine Veena. Let's come together and learn our goddess Saraswati's instrument.</p>
+                </li>
+                <li class="card">
+                    <img src="https://i.etsystatic.com/47139480/r/il/c0876d/5574511827/il_fullxfull.5574511827_36io.jpg"
+                        alt="Serviceimg">
+                    <h3>Flute Classes</h3>
+                    <p>The Melodious flute which always reminds us of Lord krishna.</p>
+                </li>
+                <li class="card">
+                    <img src="https://serenademagazine.com/content/images/wp-content/uploads/2023/03/3484668783_b69359235a_o.jpg"
+                        alt="Serviceimg">
+                    <h3>Tabla Classes</h3>
+                    <p>Tabla brings joy in every event or festival it is in.</p>
+                </li>
+                <li class="card">
+                    <img src="https://wallpaperaccess.com/full/6923821.jpg"
+                        alt="Serviceimg">
+                    <h3>Harmonium Classes</h3>
+                    <p>Best Harmonium classes Available in indore.</p>
+                </li>
+                <li class="card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.tclAcbUCSUnN0NWfaYAo7gHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Serviceimg">
+                    <h3>Santoor Classes</h3>
+                    <p>The Best Santoor classes with 'Santoor' teachers.</p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!--services section end-->
+    <!--About Section starts-->
+    <section class="About" id="About">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p> Traditional Indian music is more than sound—it's soul. Every raga teaches focus, every rhythm builds discipline, and every note opens the door to creativity. These classes don't just train musicians, they shape confident, mindful individuals who carry our culture with pride. Join the journey, and let music bring harmony to your life!</p>
+            </div>
+            <div class="row company-info">
+                <h3>Our Story</h3>
+                <p>Today, many people are drawn to foreign music and forget the treasures of our own tradition. Through Indian music, we rediscover discipline, creativity, and the timeless benefits that nurture both heart and mind.</p>
+
+                <h3>Our Vision</h3>
+                <p>Where tradition meets transformation through music.</p>
+            </div>
+            <div class="row team">
+                <h3>Our Team</h3>
+                <ul>
+                    <li>Ridima Shrivastava - founder and CEO</li>
+                    <li>krishna - CTO</li>
+                    <li>Veena varg - instrument specialist</li>
+                    <li>Rukmini - COO</li>
+                    <li>Evara- CMO</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--about us section end-->
+
+    <!--contact us section start-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section title">
+                <h2>Contact Us</h2>
+                <p>If you want to do bookings, you can either contact us or leave us an email,our team will reach to you within 5 hours.The details are given below.</p>
+            </div>
+        </div>
+        <div class="row flex">
+            <div class="col information">
+                <div class="contact-details">
+                    <p><i class="fa fa-map-marker"> 12p bagh ,mahalaxmi nagar, indore</i></p>
+                    <p><i class="fas fa-envelope"> info@swaram.com</i></p>
+                    <p><i class="fas fa-phone"> 9826077725</i></p>
+                    <p><i class="fas fa-clock">Monday 10:00 AM - 6:00 PM</i></p>
+                    <p><i class="fas fa-clock"> Saturday 10:00 AM - 3:00 PM</i></p>
+                </div>
+                <p><i class="fas fa-clock"> Sunday Closed</i></p>
+            </div>
+            <div class="col form">
+                <form action="#"></form>
+                <input type="text" placeholder="name*" required>
+                <input type="email" placeholder="email*" required>
+                <textarea placeholder="message*" required></textarea>
+                <button id="submit" type="submit">send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--contact us section end-->
+
+    <!--footer section start-->
+    <section class="footer">
+        <div class="container">
+            <span class="copyright">© 2026 Swaram Music. All rights reserved.</span>
+        </div>
+    </section>
+    
+
+    
+</body>
+
+</html>
